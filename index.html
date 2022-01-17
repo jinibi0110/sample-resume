@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Design a Resume</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <style>
+            * {
+              box-sizing: border-box;
+              font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+
+            .container {
+                max-width: 60em;
+                margin: 6em auto 19em;
+                background: #fff;
+                color: #333;
+                font-size-adjust: 0.45;
+                position: relative;
+                box-shadow: 0 0.3em 1em grey;
+            }
+
+            .column1 {
+              float: left;
+              width: 20em;
+              padding: 10px;
+              background-color: #3895d3;
+              color: #fff;
+            }
+
+            .column2 {
+              float: left;
+              width: 38em;
+              padding: 10px;
+            }
+
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;   
+            }
+
+            .title {
+                color: #3895d3;
+                letter-spacing: 4px;
+            }
+
+            .title2 {
+                letter-spacing: 2px;
+            }
+
+            .name {
+                font-size: 50px;
+                font-weight: 600;
+            }
+
+            .position {
+                font-size: 22px;
+                font-weight: 600;
+            }
+
+            .subtitle {
+                color: grey;
+                font-size: 16px;
+            }
+
+            .proj-name {
+                font-weight: 500;
+            }
+
+            .proj-pos {
+                font-style: italic;
+                font-size: 13px;
+            }
+
+            .sub {
+                font-size: 13px;
+            }
+
+            progress {
+                -webkit-writing-mode: horizontal-tb !important;
+                appearance: auto;
+                box-sizing: border-box;
+                display: inline-block;
+                height: 1em;
+                width: 5em;
+                vertical-align: -0.2em;
+                margin-right: 15px;
+            }
+            
+            .image {
+              height: 200px;
+              width: 200px;
+              background-color: #1261a0;
+              border-radius: 50%;
+              border: 5px solid #58cced;
+              display: flex;
+              align-items: center;
+            }
+
+            .contact-me, .skills, .projects, .profile, .work, .education, .achievements {
+                padding-top: 15px;
+                text-align: left;
+                padding-left: 15px;
+                font-size: 15px;
+            }
+
+            .image, .name-position {
+                margin-top: 60px;
+            }
+
+            .name-position {
+                padding-left: 15px;
+                margin-bottom: 30px;
+            }
+
+            .image {
+                margin-left: 50px;
+                margin-bottom: 30px;
+            }
+
+            .contact-me {
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="column1">
+                    <div class="image">
+    
+                    </div>
+    
+                    <div class="contact-me">
+                        <h2 class="title2">CONTACT ME AT</h2>
+                        <p>Purok 6, Luwalhati Village, Brgy, Mabuhay, General Santos City, South Cotabato, Philippines, 9500</p>
+                        <p>gen.mindajao@gmail.com</p>
+                        <p>09776384463</p>
+                        <p>ph.linkedin.com/in/genevie-mindajao</p>
+                        <p>behance.net/geneviemindajao</p>
+                    </div>
+    
+                    <div class="skills">
+                        <h2 class="title2">SKILLS PROFICIENCY</h2>
+                        <p><progress id="file" value="60" max="100"></progress>Adobe Photoshop</p>
+                        <p><progress id="file" value="100" max="100"></progress>Bootstrap, Bootstrap-Vue</p>
+                        <p><progress id="file" value="80" max="100"></progress>CSS, SASS, BEM</p>
+                        <p><progress id="file" value="80" max="100"></progress>HTML</p>
+                        <p><progress id="file" value="80" max="100"></progress>JavaScript</p>
+                        <p><progress id="file" value="80" max="100"></progress>VueJS, Vuex</p>
+                        <p><progress id="file" value="80" max="100"></progress>Vuetify, Material-UI</p>
+                        <p><progress id="file" value="60" max="100"></progress>ReactJS, Redux</p>
+                        <p><progress id="file" value="80" max="100"></progress>Git</p>
+                        <p><progress id="file" value="80" max="100"></progress>Bitbucket</p>
+                        <p><progress id="file" value="32" max="100"></progress>JIRA Software, Service-Desk</p>
+                        <p><progress id="file" value="80" max="100"></progress>Confluence</p>
+                        <p><progress id="file" value="100" max="100"></progress>Trello</p>
+                        <p><progress id="file" value="60" max="100"></progress>SAP Business One</p>
+                        <p><progress id="file" value="80" max="100"></progress>Microsoft Office Tools</p>
+                    </div>
+    
+                    <div class="projects">
+                        <h2 class="title2">PROJECTS DEVELOPED</h2>
+                        <p>
+                            <span class="proj-name">Recruitment Tracking System</span>
+                            <br/>
+                            <span class="proj-pos">Primary UX Designer</span>
+                        </p>
+    
+                        <p>
+                            <span class="proj-name">Check Management Application</span>
+                            <br/>
+                            <span class="proj-pos">Primary UX Designer</span>
+                        </p>
+    
+                        <p>
+                            <span class="proj-name">Master Data Management System</span>
+                            <br/>
+                            <span class="proj-pos">Primary UX Designer</span>
+                        </p>
+    
+                        <p>
+                            <span class="proj-name">Asset Management System</span>
+                            <br/>
+                            <span class="proj-pos">Secondary UX Designer</span>
+                        </p>
+    
+                        <p>
+                            <span class="proj-name">REvive Booking System</span>
+                            <br/>
+                            <span class="proj-pos">Secondary UX Designer</span>
+                        </p>
+                        
+                    </div>
+                </div>
+    
+                  <div class="column2">
+                    <div class="name-position">
+                        <span class="title name">GENEVIE MINDAJAO</span>
+                        <p class="subtitle position">FRONT - END DEVELOPER | UI / UX DESIGNER</p>
+                    </div>
+    
+                    <div class="profile">
+                        <h2 class="title">PERSONAL PROFILE</h2>
+                        <p class="subtitle">Has holistic knowledge of software development and design. A proven team player who has worked with multi-culturaland diverse team.</p>
+                    </div>
+    
+                    <div class="work">
+                        <h2 class="title">WORK EXPERIENCE</h2>
+                        <p>
+                            <span class="proj-name">Front-End Developer | UI/UX Designer</span>
+                            <br/>
+                            <span class="proj-pos">Biotech Farms Inc. | July 2019 - present</span>
+                            <br/>
+                            <span class="sub">- Integrate API that ensures functionality meets the users'requirements</span>
+                            <span class="sub">- Make strategic design and user-experience decisionsrelated to core, and new, functions and features</span>
+                        </p>
+
+                        <p>
+                            <span class="proj-name">DESO Technical Support (Part-Time)</span>
+                            <br/>
+                            <span class="proj-pos">Commission on Elections | February 2019 - May 2019</span>
+                            <br/>
+                            <span class="sub">- Appointed to provide VCM (Vote Counting Machine)Technical Support</span>
+                        </p>
+                    </div>
+    
+                    <div class="education">
+                        <h2 class="title">EDUCATIONAL BACKGROUND</h2>
+                        <p>
+                            <span class="proj-name">Mindanao State University - GenSan Campus</span>
+                            <br/>
+                            <span class="proj-pos">BS Information Technology | 2015 - 2019</span>
+                            <br/>
+                            <span class="sub">- Major in Database Management</span>
+                            <br/>
+                            <span class="sub">- Thesis Title : Caireen : Baby-Care Monitoring System</span>
+                        </p>
+                    </div>
+    
+                    <div class="achievements">
+                        <h2 class="title">ACHIEVEMENTS AND MILESTONES</h2>
+                        <p>
+                            <span class="proj-name">SAP Be Visual! Sketching Basic for IT Business Passer</span>
+                            <br/>
+                            <span class="proj-pos">December 2020</span>
+                        </p>
+
+                        <p>
+                            <span class="proj-name">Civil Service Professional Passer</span>
+                            <br/>
+                            <span class="proj-pos">March 2018</span>
+                        </p>
+
+                        <p>
+                            <span class="proj-name">Cargill Scholar</span>
+                            <br/>
+                            <span class="proj-pos">2006 - 2010</span>
+                        </p>
+
+                        <p>
+                            <span class="proj-name">Graduated With Honors</span>
+                            <br/>
+                            <span class="proj-pos">DWCES | 2006</span>
+                        </p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </body>
+</html>
